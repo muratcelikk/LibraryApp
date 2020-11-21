@@ -57,6 +57,11 @@ OOP baz alınarak katmanlı mimari ile oluşturulmuştur.
 ## Kullanılan Teknolojiler
 Spring Boot, Spring Security, Spring Data-JPA/Hibernate, Maven, ThymeLeaf, Html, Css, jquery, bootstrap, Mysql)(Getter-setter yerine Lombok plugini de kullanılabilir).
 
+## Eksiklikler
+Search eksik. 
+Join table eksik.
+Security eksik. 
+
 ## Projenin Ekran görüntüleri
 <p>
 <a href="https://github.com/muratcelikk/LibraryApplication/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%2083.jpg" target="_blank">

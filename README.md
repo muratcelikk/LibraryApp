@@ -1,4 +1,4 @@
-# IDE Bagımsız Kurulum:
+# İDE Bağımsız Kurulum:
 
 - JDK 15 kurunuz. İndirme bağlantısı: http://jdk.java.net/java-se-ri/15 (OpenJDK) İşletim sisteminize uygun olanı seçiniz.
 
@@ -18,13 +18,13 @@
 
 Terminal üzerinde: 
 ```git
- git clone https://github.com/muratcelikk/LibraryApplication.git 
+ git clone https://github.com/muratcelikk/LibraryApp.git 
  ```
 (Bu komut için "git" kurulmuş olmalıdır.)
 
 İlgili Klasöre ulaşınız.
 ```git
- cd LibraryApplication  
+ cd LibraryApp  
 ```
 Maven İle derleme yapınız.
 ```git 
@@ -32,16 +32,17 @@ Maven İle derleme yapınız.
 ```
 Jar dosyasını çalıştırmak için aşağıdaki komutu giriniz. 
 ```cmd 
-java -jar target/LibraryApplication.jar 
+java -jar target/LibraryApp.jar 
 ```
 ##
 ## Uygulama özellikleri:
 
-- Yazar Tanımı yapılabilmeli (Yazar Adı)
-- Yayın Evi Tanımı yapılabilmeli (Yayın Evi Adı)
-- Kitap tanıtımı yapılabilmeli (kitap adı, yazar, yayın evi, isbn numarası,)
+- Yazar Tanımı yapılabilmeli (Yazar Adı, Açıklama)
+- Yayın Evi Tanımı yapılabilmeli (Yayın Evi Adı, Açıklama)
+- Kitap tanıtımı yapılabilmeli (kitap adı, yazar, yayın evi, isbn numarası vs.)
 - Bir Yazar için n tane kitap tanımlanabilmeli
 - Bir Yayın evi için n tane kitap tanımlanabilmeli
+- Kitap adı, Seri adı, Yazar ya da ISBN ile arama yapılabilmeli
 - Var olan bir kayıt üzerinde değişiklik yapılabilmeli
 - Var olan kayıtlar incelebilmeli
 - Var olan bir kayıt silinebilmeli
@@ -56,6 +57,11 @@ OOP baz alınarak katmanlı mimari ile oluşturulmuştur.
 
 ## Kullanılan Teknolojiler
 Spring Boot, Spring Security, Spring Data-JPA/Hibernate, Maven, ThymeLeaf, Html, Css, jquery, bootstrap, Mysql)(Getter-setter yerine Lombok plugini de kullanılabilir).
+
+## Eksiklikler
+Search eksik. (Kitap adı, Seri adı, Yazar vs. arama)
+Join table eksik.
+Security eksik. 
 
 ## Projenin Ekran görüntüleri
 <p>

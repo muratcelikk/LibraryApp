@@ -10,7 +10,7 @@
 
 - MYSQL veritabanı kurulmalı. Docker(compose.yml) veya XAMPP(mysql) programları ile süreci hızlandırabilirsiniz.
 
-  Mysql DB içinde sql klasörü içerisindeki librarydbb.sql import edilmelidir.
+  Mysql DB içinde sql klasörü içerisindeki libraryappdb.sql import edilmelidir.
 
   Mysql DB'yi ayağa kaldırmalıyız.(Yoksa program çalışmaz.)
 
@@ -65,28 +65,31 @@ Security eksik.
 
 ## Projenin Ekran görüntüleri
 <p>
-<a href="https://github.com/muratcelikk/LibraryApplication/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%2083.jpg" target="_blank">
-<img src="https://github.com/muratcelikk/LibraryApplication/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%2083.jpg" width="200" style="max-width:100%;"></a>
+<a href="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20130.jpg" target="_blank">
+<img src="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20130.jpg" width="200" style="max-width:100%;"></a>
 
-<a href="https://github.com/muratcelikk/LibraryApplication/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%2084.jpg" target="_blank">
-<img src="https://github.com/muratcelikk/LibraryApplication/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%2084.jpg" width="200" style="max-width:100%;"></a>
+<a href="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20131.jpg" target="_blank">
+<img src="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20131.jpg" width="200" style="max-width:100%;"></a>
 
-<a href="https://github.com/muratcelikk/LibraryApplication/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%2085.jpg" target="_blank">
-<img src="https://github.com/muratcelikk/LibraryApplication/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%2085.jpg" width="200" style="max-width:100%;"></a>
+<a href="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20132.jpg" target="_blank">
+<img src="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20132.jpg" width="200" style="max-width:100%;"></a>
 
-<a href="https://github.com/muratcelikk/LibraryApplication/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%2090.jpg" target="_blank">
-<img src="https://github.com/muratcelikk/LibraryApplication/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%2090.jpg" width="200" style="max-width:100%;"></a>
+<a href="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20133.jpg" target="_blank">
+<img src="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20133.jpg" width="200" style="max-width:100%;"></a>
 
-<a href="https://github.com/muratcelikk/LibraryApplication/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%2086.jpg" target="_blank">
-<img src="https://github.com/muratcelikk/LibraryApplication/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%2086.jpg" width="200" style="max-width:100%;"></a>
+<a href="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20134.jpg" target="_blank">
+<img src="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20134.jpg" width="200" style="max-width:100%;"></a>
 
-<a href="https://github.com/muratcelikk/LibraryApplication/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%2087.jpg" target="_blank">
-<img src="https://github.com/muratcelikk/LibraryApplication/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%2087.jpg" width="200" style="max-width:100%;"></a>
+<a href="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20135.jpg" target="_blank">
+<img src="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20135.jpg" width="200" style="max-width:100%;"></a>
 
-<a href="https://github.com/muratcelikk/LibraryApplication/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%2088.jpg" target="_blank">
-<img src="https://github.com/muratcelikk/LibraryApplication/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%2088.jpg" width="200" style="max-width:100%;"></a>
+<a href="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20136.jpg" target="_blank">
+<img src="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20136.jpg" width="200" style="max-width:100%;"></a>
 
-<a href="https://github.com/muratcelikk/LibraryApplication/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%2089.jpg" target="_blank">
-<img src="https://github.com/muratcelikk/LibraryApplication/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%2089.jpg" width="200" style="max-width:100%;"></a>
+<a href="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20137.jpg" target="_blank">
+<img src="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20137.jpg" width="200" style="max-width:100%;"></a>
 
+<a href="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20138.jpg" target="_blank">
+<img src="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20138.jpg" width="200" style="max-width:100%;"></a>
 
+</p>

@@ -24,7 +24,7 @@ Terminal üzerinde:
 
 İlgili Klasöre ulaşınız.
 ```git
- cd LibraryApplication  
+ cd LibraryApp  
 ```
 Maven İle derleme yapınız.
 ```git 
@@ -32,7 +32,7 @@ Maven İle derleme yapınız.
 ```
 Jar dosyasını çalıştırmak için aşağıdaki komutu giriniz. 
 ```cmd 
-java -jar target/LibraryApplication.jar 
+java -jar target/LibraryApp.jar 
 ```
 ##
 ## Uygulama özellikleri:

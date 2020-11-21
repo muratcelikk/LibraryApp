@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--Header-->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
+        <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+        <title>Registration</title>
+</head>
+<!--Navbar-->
+<body>
+ <!--Body-->
+        <div class="container">
+            <div class="row">
+
+                <div class = "box">
+                    <h2>Login Page</h2>
+                    <form th:action="@{/login}" method="post">
+                        <!--Alert-->
+                        <div th:if="${param.error}">
+                            <div class="alert alert-danger">Invalid username or password.
+                            </div>
+                        </div>
+                        <div th:if="${param.logout}">
+                            <div class="alert alert-info">You have been logged out.</div>
+                        </div>
+                        <!--Login Box-->
+                        <div class="inputBox">
+                            <input type="text" name="username" id="username" placeholder="" required="">
+                            <label for="username">Username</label>
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" name="password" id="password" placeholder="" required="">
+                            <label for="password">Password</label>
+                        </div>
+                        <input type="submit" name="" id="" value="Log In">
+                        <br>
+                        <br>
+                        <!--Register Here-->
+                        <div class="regist">
+                            <span style="color:white">New user? <a href="/" th:href="@{/registration}"> Register here</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
+        <script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+</body>
+</html>

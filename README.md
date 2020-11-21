@@ -37,11 +37,12 @@ java -jar target/LibraryApp.jar
 ##
 ## Uygulama özellikleri:
 
-- Yazar Tanımı yapılabilmeli (Yazar Adı)
-- Yayın Evi Tanımı yapılabilmeli (Yayın Evi Adı)
-- Kitap tanıtımı yapılabilmeli (kitap adı, yazar, yayın evi, isbn numarası,)
+- Yazar Tanımı yapılabilmeli (Yazar Adı, Açıklama)
+- Yayın Evi Tanımı yapılabilmeli (Yayın Evi Adı, Açıklama)
+- Kitap tanıtımı yapılabilmeli (kitap adı, yazar, yayın evi, isbn numarası vs.)
 - Bir Yazar için n tane kitap tanımlanabilmeli
 - Bir Yayın evi için n tane kitap tanımlanabilmeli
+- Kitap adı, Seri adı, Yazar ya da ISBN ile arama yapılabilmeli
 - Var olan bir kayıt üzerinde değişiklik yapılabilmeli
 - Var olan kayıtlar incelebilmeli
 - Var olan bir kayıt silinebilmeli
@@ -58,7 +59,7 @@ OOP baz alınarak katmanlı mimari ile oluşturulmuştur.
 Spring Boot, Spring Security, Spring Data-JPA/Hibernate, Maven, ThymeLeaf, Html, Css, jquery, bootstrap, Mysql)(Getter-setter yerine Lombok plugini de kullanılabilir).
 
 ## Eksiklikler
-Search eksik. 
+Search eksik. (Kitap adı, Seri adı, Yazar vs. arama)
 Join table eksik.
 Security eksik. 
 

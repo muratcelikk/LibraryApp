@@ -18,7 +18,7 @@
 
 Terminal üzerinde: 
 ```git
- git clone https://github.com/muratcelikk/LibraryApplication.git 
+ git clone https://github.com/muratcelikk/LibraryApp.git 
  ```
 (Bu komut için "git" kurulmuş olmalıdır.)
 

@@ -59,8 +59,8 @@ OOP baz alınarak katmanlı mimari ile oluşturulmuştur.
 Spring Boot, Spring Security, Spring Data-JPA, Maven, ThymeLeaf, Html, Css, jquery, bootstrap, Mysql, Lombok.
 
 ## Eksiklikler
-Search eksik. (Kitap adı, Seri adı, Yazar vs. arama)
-Join table eksik.
+Search (Kitap adı, Seri adı, Yazar vs. arama), 
+Join table, 
 Security eksik. 
 
 ## Projenin Ekran görüntüleri

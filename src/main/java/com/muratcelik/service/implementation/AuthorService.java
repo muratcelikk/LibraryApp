@@ -1,6 +1,7 @@
 package com.muratcelik.service.implementation;
 
 import com.muratcelik.entity.Author;
+import com.muratcelik.entity.Book;
 import com.muratcelik.repository.AuthorRepo;
 import com.muratcelik.service.IAuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,5 +48,10 @@ public class AuthorService implements IAuthorService {
         author.setExplanation(authorUpdate.getExplanation());
         author.setBook(authorUpdate.getBook());
         authorRepo.save(author);
+    }
+
+    @Override
+    public List<Book> findByName(String authorName) {
+        return authorRepo.findByName(authorName);
     }
 }

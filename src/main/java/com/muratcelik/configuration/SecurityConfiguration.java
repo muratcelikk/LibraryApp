@@ -9,6 +9,7 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
@@ -17,24 +18,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Autowired
     private IUserService IUserService;
 
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http
-                .authorizeRequests()
-                .antMatchers(
-                        "/registration**",
-                        "/login/**",
-                        "/home/**",
-                        "/author/**",
-                        "/book/**",
-                        "/publisher/**",
-                        "/js/**",
-                        "/css/**",
-                        "/img/**",
-                        "/webjars/**").permitAll() //herkese açık
+        http.authorizeRequests()
+                .antMatchers("/registration**", "/login/**", "/home/**", "/author/**", "/book/**", "/publisher/**", "/js/**", "/css/**", "/img/**", "/webjars/**").permitAll() //herkese açık
                 .antMatchers("/admin/**").hasAnyAuthority("ADMIN")
                 .antMatchers("/user/**").hasAnyAuthority("USER")
-                .antMatchers("/home/").hasAnyRole("ROLE","USER")  //Her ikisi de ulaşır.
+                .antMatchers("/home/").hasAnyRole("ADMIN","USER")  //Her ikisi de ulaşır.
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
@@ -60,10 +51,5 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         auth.setUserDetailsService(IUserService);
         auth.setPasswordEncoder(passwordEncoder());
         return auth;
-    }
-
-    @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.authenticationProvider(authenticationProvider());
     }
 }

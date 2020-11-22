@@ -52,4 +52,19 @@ public class BookService implements IBookService {
         book.setPublisher(bookUpdate.getPublisher());
         bookRepo.save(book);
     }
+
+    @Override
+    public Book findByName(String bookName) {
+        return bookRepo.findByName(bookName);
+    }
+
+    @Override
+    public List<Book> findBySerialName(String serialName) {
+        return bookRepo.findBySerialName(serialName);
+    }
+
+    @Override
+    public Book findByIsbnNo(String isbnNo) {
+        return bookRepo.findByIsbnNo(isbnNo);
+    }
 }

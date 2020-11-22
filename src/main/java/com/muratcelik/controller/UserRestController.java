@@ -29,12 +29,12 @@ public class UserRestController {
     }
     //======================= AUTHOR =======================
     //GetAll
-    @GetMapping(value = "/user/Author")
+    @GetMapping(value = "/user/author")
     public List<Author> getAllAuthor() {
         return authorService.getAllAuthor();
     }
     //GetById
-    @GetMapping(value = "/user/Author/{id}")
+    @GetMapping(value = "/user/author/{id}")
     public Optional<Author> getAuthorById(@PathVariable("id") long id) {
         return authorService.getAuthorById(id);
     }
@@ -58,12 +58,12 @@ public class UserRestController {
     }
     //======================= BOOK =======================
     //GetAll
-    @GetMapping(value = "/user/Book")
+    @GetMapping(value = "/user/book")
     public List<Book> getAllBook() {
         return bookService.getAllBook();
     }
     //GetById
-    @GetMapping(value = "/user/Book/{id}")
+    @GetMapping(value = "/user/book/{id}")
     public Optional<Book> getBookById(@PathVariable("id") long id) {
         return bookService.getBookById(id);
     }
@@ -87,12 +87,12 @@ public class UserRestController {
     }
     //================= PUBLİSHER =======================
     //GetAll
-    @GetMapping(value = "/user/Publisher")
+    @GetMapping(value = "/user/publisher")
     public List<Publisher> getAllPublisher() {
         return publisherService.getAllPublisher();
     }
     //GetById
-    @GetMapping(value = "/user/Publisher/{id}")
+    @GetMapping(value = "/user/publisher/{id}")
     public Optional<Publisher> getPublisherById(@PathVariable("id") long id) {
         return publisherService.getPublisherById(id);
     }
@@ -113,5 +113,26 @@ public class UserRestController {
     public ResponseEntity<String> updatePublisher(@RequestBody Publisher publisher) {
         publisherService.updatePublisher(publisher);
         return new ResponseEntity<>("OK", HttpStatus.CREATED);
+    }
+
+    // FindBy
+    @GetMapping(value = "/user/findAuthorName/{authorName}")
+    public List<Book> getBookByAuthorName(@PathVariable("authorName") String authorName) {
+        return authorService.findByName(authorName);
+    }
+
+    @GetMapping(value = "/user/findBookName/{bookName}")
+    public Book findByBookName(@PathVariable("bookName") String bookName) {
+        return bookService.findByName(bookName);
+    }
+
+    @GetMapping(value = "/user/findBookSerialName/{serialName}")
+    public List<Book> findByBookSerialName(@PathVariable("serialName") String serialName) {
+        return bookService.findBySerialName(serialName);
+    }
+
+    @GetMapping(value = "/user/findIsbnNo/{isbnNo}")
+    public Book findByIsbnNo(@PathVariable("isbnNo") String isbnNo) {
+        return bookService.findByIsbnNo(isbnNo);
     }
 }

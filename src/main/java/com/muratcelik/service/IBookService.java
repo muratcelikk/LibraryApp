@@ -18,4 +18,9 @@ public interface IBookService {
 
     void updateBook(Book bookUpdate);
 
+    Book findByName(String bookName);
+
+    List<Book> findBySerialName(String serialName);
+
+    Book findByIsbnNo(String isbnNo);
 }

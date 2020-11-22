@@ -56,7 +56,7 @@ OOP baz alınarak katmanlı mimari ile oluşturulmuştur.
 - Sunum Katmanı
 
 ## Kullanılan Teknolojiler
-Spring Boot, Spring Security, Spring Data-JPA/Hibernate, Maven, ThymeLeaf, Html, Css, jquery, bootstrap, Mysql)(Getter-setter yerine Lombok plugini de kullanılabilir).
+Spring Boot, Spring Security, Spring Data-JPA, Maven, ThymeLeaf, Html, Css, jquery, bootstrap, Mysql, Lombok.
 
 ## Eksiklikler
 Search eksik. (Kitap adı, Seri adı, Yazar vs. arama)

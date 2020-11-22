@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# LibraryApp
-Spring
-=======
 # İDE Bağımsız Kurulum:
 
 - JDK 15 kurunuz. İndirme bağlantısı: http://jdk.java.net/java-se-ri/15 (OpenJDK) İşletim sisteminize uygun olanı seçiniz.
@@ -97,4 +93,3 @@ Security..
 <img src="https://github.com/muratcelikk/LibraryApp/blob/main/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20138.jpg" width="200" style="max-width:100%;"></a>
 
 </p>
->>>>>>> 8cf8baac3f799421f138296a792f48fdc69a697e

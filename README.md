@@ -6,7 +6,7 @@
 
   https://maven.apache.org/install.html adresinden kurulum adımlarını inceleyebilirsiniz.
 
-- Maven ortam değişkenlerinde (PATH) kayıtlı olmalıdır. (Başlat->Gelişmiş sistem ayarlarını görüntüle->Gelişmiş-Ortam Değişkenleri-->Kullanıcı ve Sistem Değişkeni eklenmeli)
+- Maven ortam değişkenlerinde (PATH) kayıtlı olmalıdır.
 
 - MYSQL veritabanı kurulmalı. Docker(compose.yml) veya XAMPP(mysql) programları ile süreci hızlandırabilirsiniz.
 

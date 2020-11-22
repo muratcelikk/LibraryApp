@@ -61,7 +61,7 @@ Spring Boot, Spring Security, Spring Data-JPA, Maven, ThymeLeaf, Html, Css, jque
 ## Eksiklikler
 Search (Kitap adı, Seri adı, Yazar vs. arama), 
 Join table, 
-Security eksik. 
+Security.. 
 
 ## Projenin Ekran görüntüleri
 <p>

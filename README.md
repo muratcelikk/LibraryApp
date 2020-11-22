@@ -59,9 +59,9 @@ OOP baz alınarak katmanlı mimari ile oluşturulmuştur.
 Spring Boot, Spring Security, Spring Data-JPA/Hibernate, Maven, ThymeLeaf, Html, Css, jquery, bootstrap, Mysql)(Getter-setter yerine Lombok plugini de kullanılabilir).
 
 ## Eksiklikler
-Search eksik. (Kitap adı, Seri adı, Yazar vs. arama)
-Join table eksik.
-Security eksik. 
+- Search eksik. (Kitap adı, Seri adı, Yazar vs. arama)
+- Join table eksik.
+- Security eksik. 
 
 ## Projenin Ekran görüntüleri
 <p>

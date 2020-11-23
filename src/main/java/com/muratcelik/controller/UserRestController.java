@@ -21,7 +21,7 @@ public class UserRestController {
     private IBookService bookService;
     private IPublisherService publisherService;
 
-    //Constructor injection
+    @Autowired //Constructor injection
     public UserRestController(IAuthorService authorService, IBookService bookService, IPublisherService publisherService) {
         this.authorService = authorService;
         this.bookService = bookService;

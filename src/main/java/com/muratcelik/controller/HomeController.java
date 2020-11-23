@@ -16,11 +16,12 @@ import java.util.Optional;
 @Controller
 public class HomeController {
 
-    @Autowired
-    private IBookService bookService; //===>Önem Arz ediyor<===
+    
+    private IBookService bookService; 
     private IAuthorService authorService;
     private IPublisherService publisherService;
-
+    
+    @Autowired
     public HomeController(IBookService bookService, IAuthorService authorService, IPublisherService publisherService) {
         this.bookService = bookService;
         this.authorService = authorService;

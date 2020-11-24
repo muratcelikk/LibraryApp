@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# LibraryApp
-Spring
-=======
+
 # İDE Bağımsız Kurulum:
 
 - JDK 15 kurunuz. İndirme bağlantısı: http://jdk.java.net/java-se-ri/15 (OpenJDK) İşletim sisteminize uygun olanı seçiniz.

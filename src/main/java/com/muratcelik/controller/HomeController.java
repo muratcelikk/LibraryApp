@@ -16,7 +16,7 @@ import java.util.Optional;
 @Controller
 public class HomeController {
 
-<<<<<<< HEAD
+
     @Autowired
     private IBookService bookService;
 
@@ -25,19 +25,7 @@ public class HomeController {
 
     @Autowired
     private IPublisherService publisherService;
-=======
-    
-    private IBookService bookService; 
-    private IAuthorService authorService;
-    private IPublisherService publisherService;
-    
-    @Autowired
-    public HomeController(IBookService bookService, IAuthorService authorService, IPublisherService publisherService) {
-        this.bookService = bookService;
-        this.authorService = authorService;
-        this.publisherService = publisherService;
-    }
->>>>>>> ae2b4ea0560a6cc61b028d424d6cf95aabc165ac
+
 
     @GetMapping("/")
     public String homepage(){

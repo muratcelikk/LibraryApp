@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Book</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+    <body>
+    <!--Navbar-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="/home">Home</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/author">Author</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/book">Book</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active navbar-right" href="/publisher">Publisher</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--Table-->
+    <div class="container my-2">
+        <!--add-Logout-->
+        <a th:href="@{/listAddBook}" class="btn btn-primary btn-sm mb-3">BOOK ADD</a>
+        <a th:href="@{/logout}" class="btn btn-primary btn-sm mb-3">Logout</a>
+
+        <table border="1" class = "table table-striped table-responsive-md">
+
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>SUBNAME</th>
+                <th>SERIAL</th>
+                <th>ISBN NO</th>
+                <th>AUTHOR</th>
+                <th>PUBLISHER</th>
+                <th>EXPLANATION</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="item : ${dash}">
+                <td th:text="${item.id}"></td>
+                <td th:text="${item.name}"></td>
+                <td th:text="${item.subName}"></td>
+                <td th:text="${item.serialName}"></td>
+                <td th:text="${item.isbnNo}"></td>
+                <td th:text="${item.author}"></td>
+                <td th:text="${item.publisher}"></td>
+                <td th:text="${item.explanation}"></td>
+                <td>
+                    <a th:href="@{/updateBook/{id}(id=${item.id})}" class="btn btn-primary">Update</a>
+                    <a th:href="@{/deleteBook/{id}(id=${item.id})}" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <!--footer-->
+    <hr>
+    <div style="text-align: center">&copy; 2020 MURAT CELIK</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.1/cjs/popper.min.js"
+        integrity="sha256-T3bYsIPyOLpEfeZOX4M7J59ZoDMzuYFUsPiSN3Xcc2M=" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

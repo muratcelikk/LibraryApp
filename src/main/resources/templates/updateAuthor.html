@@ -40,26 +40,3 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 
-</body>
-</html>
-
-<body>
-    <div class="container">
-        <h1>MANAGEMENT SYSTEM OF BOOKSHELF</h1>
-        <hr>
-            <h2>BOOK UPDATE</h2>
-            <form action="#" th:action="@{/addAuthor}" th:object="${author}" method="POST">
-                <input type="hidden" th:field="*{id}" />
-                <input type="text" th:field="*{name}" placeholder="Author name" class="form-control mb-4 col-4">
-                <input type="text" th:field="*{surname}" placeholder="Surname" class="form-control mb-4 col-4">
-                <input type="text" th:field="*{book}" placeholder="Publisher" class="form-control mb-4 col-4">
-                <input type="text" th:field="*{explanation}" placeholder="Explanation" class="form-control mb-4 col-4">
-                <button type="submit" class="btn btn-info col-2"> UPDATE</button>
-            </form>
-            <hr>
-        <a th:href="@{/author}">AUTHOR LIST BACK</a>
-    </div>
-    
-</body>
-</html>
-

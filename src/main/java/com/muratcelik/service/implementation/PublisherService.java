@@ -12,12 +12,10 @@ import java.util.Optional;
 @Service
 public class PublisherService implements IPublisherService {
 
-    private PublisherRepo publisherRepo;
 
     @Autowired
-    public PublisherService(PublisherRepo publisherRepo) {
-        this.publisherRepo = publisherRepo;
-    }
+    private PublisherRepo publisherRepo;
+    
 
     @Override
     public List<Publisher> getAllPublisher() {

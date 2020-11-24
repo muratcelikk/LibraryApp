@@ -13,12 +13,9 @@ import java.util.Optional;
 @Service
 public class AuthorService implements IAuthorService {
 
-    private AuthorRepo authorRepo;
-
     @Autowired
-    public AuthorService(AuthorRepo authorRepo) {
-        this.authorRepo = authorRepo;
-    }
+    private AuthorRepo authorRepo;
+    
 
     @Override
     public List<Author> getAllAuthor() {

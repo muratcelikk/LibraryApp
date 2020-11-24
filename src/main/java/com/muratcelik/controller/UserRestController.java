@@ -27,7 +27,16 @@ public class UserRestController {
     @Autowired
     private IPublisherService publisherService;
 
+<<<<<<< HEAD
 
+=======
+    @Autowired //Constructor injection
+    public UserRestController(IAuthorService authorService, IBookService bookService, IPublisherService publisherService) {
+        this.authorService = authorService;
+        this.bookService = bookService;
+        this.publisherService = publisherService;
+    }
+>>>>>>> ae2b4ea0560a6cc61b028d424d6cf95aabc165ac
     //======================= AUTHOR =======================
     //GetAll
     @GetMapping(value = "/user/author")

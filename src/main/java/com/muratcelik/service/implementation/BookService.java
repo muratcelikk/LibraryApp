@@ -13,12 +13,9 @@ import java.util.Optional;
 @Service
 public class BookService implements IBookService {
 
-    private BookRepo bookRepo;
-
+   
     @Autowired
-    public BookService(BookRepo bookRepo) {
-        this.bookRepo = bookRepo;
-    }
+    private BookRepo bookRepo;
 
     @Override
     public List<Book> getAllBook() {
